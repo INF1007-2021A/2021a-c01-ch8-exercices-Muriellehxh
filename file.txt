@@ -1,0 +1,2 @@
+test
+ecrit dans un fichier
