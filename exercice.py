@@ -82,6 +82,7 @@ def comparaison_2_fichiers(f1, f2):
         for ch2 in f2_list:
             if ch1 != ch2:
                 return ch1, ch2
+    
 
 
 if __name__ == '__main__':
