@@ -10,6 +10,7 @@ from os import path # peremt de verifier chemin
 from json import
 
 
+
 # TODO: Définissez vos fonction ici
 
 def recette_ex5(file_path):
