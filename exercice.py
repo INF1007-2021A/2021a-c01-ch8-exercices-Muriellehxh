@@ -27,6 +27,14 @@ def comparaison(f1, f2):
             fichier2.close()
 
 
+def Triple(f1, f2):
+    with open(f1, "r", encoding="utf-8") as fichier1, open(f2, "r", encoding="utf-8") as fichier2:
+
+        for line in fichier1:
+            for word in line:
+                fichier2.write(word.ljust(3))
+
+
 
 
 
