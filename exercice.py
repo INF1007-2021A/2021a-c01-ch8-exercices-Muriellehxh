@@ -7,36 +7,27 @@
 import os
 import sys
 
-# TODO: Définissez vos fonction ici
+# TODO: Définissez vos fonctions ici
 
-f1_list = []
-f2_list = []
+def comparaison(f1, f2):
+    with open(f1, "r", encoding="utf-8") as fichier1:
+        with open(f2, "r", encoding="utf-8") as fichier2:
+            i = 0
 
-def comparaison_2_fichiers(f1, f2):
-    with open(f1, 'r') as f1_read:
-        for line in f1_read:
-            for ch in line:
-                f1_list.append(ch)
+            for line1 in fichier1:
+                i += 1
+                for line2 in fichier2:
 
-    with open(f2, 'r') as f2_read:
-        for ligne in f2_read:
-            for mn in ligne:
-                f2_list.append(mn)
+                    if line1 == line2:
+                        print('Ligne', i, ': est identique')
+                    else:
+                        print('Ligne', i, 'est différente')
 
-    if f1_list == f2_list:
-        print('listes sont les memes')
+            fichier1.close()
+            fichier2.close()
 
 
-    else:
-        if len(f1_list) < len(f2_list):
-            return f2_list[f1_list.index(f1_list[-1]) + 1]
-        if len(f2_list) < len(f1_list):
-            return f1_list[f2_list.index(f2_list[-1]) + 1]
 
-        if len(f1_list) == len(f2_list):
-            for n in range(len(f1_list)):
-                if f1_list[n] != f2_list[n]:
-                   return f1_list[n], f2_list[n]
 
 
 if __name__ == '__main__':
@@ -44,5 +35,5 @@ if __name__ == '__main__':
 
     f1 = 'fichier1.txt'
     f2 = 'fichier2.txt'
-    print(comparaison_2_fichiers(f1, f2))
+    print(comparaison(f1, f2))
 

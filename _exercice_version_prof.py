@@ -10,6 +10,10 @@ from os import path
 import pickle
 
 
+" *** Utiliser with open(name, 'r',  encoding ="")  shape when opening docs "
+"  And dont forget to close documents at the end!!! "
+
+
 # TODO: Définissez vos fonction ici
 
 
