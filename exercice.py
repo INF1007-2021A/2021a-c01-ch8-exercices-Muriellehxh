@@ -28,13 +28,12 @@ def comparaison(f1, f2):
 
 
 def Triple(f1, f2):
-    with open(f1, "r", encoding="utf-8") as fichier1, open(f2, "r", encoding="utf-8") as fichier2:
+    with open(f1, "r", encoding="utf-8") as fichier1, open(f2, "a", encoding="utf-8") as fichier2:
 
         for line in fichier1:
-            for word in line:
-                fichier2.write(word.ljust(3))
+                for word in line.split():
 
-
+                   fichier2.write(word + '   ')
 
 
 
@@ -45,3 +44,4 @@ if __name__ == '__main__':
     f2 = 'fichier2.txt'
     print(comparaison(f1, f2))
 
+    print(Triple(f1, f2))
