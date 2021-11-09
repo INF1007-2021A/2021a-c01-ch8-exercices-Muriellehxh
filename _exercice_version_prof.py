@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/eénv python
 # -*- coding: utf-8 -*-
 
 PERCENTAGE_TO_LETTER = {"A*": [95, 101], "A": [90, 95], "B+": [85, 90], "B": [80, 85], "C+": [75, 80], "C": [70, 75],
@@ -103,7 +103,7 @@ def exercice6(file_path1, file_path2):
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-    exercice1("./exemple.txt", "./exemple2.txt")
+    exercice1("./fichier1.txt", "./fichier2.txt")
     exercice2("./exemple.txt", "./exemple_copy.txt")
     exercice3("./notes.txt", "./notes_letter.txt")
     exercice4("./recettes.p")
