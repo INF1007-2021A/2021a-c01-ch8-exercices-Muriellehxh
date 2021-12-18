@@ -62,7 +62,7 @@ if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
 
     f1 = 'fichier1.txt'
-    f2 = 'fichier2.txt'
+    f2 = 'fichier2'
     print(comparaison(f1, f2))
 
     print(Triple(f1, f2))
